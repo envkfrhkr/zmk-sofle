@@ -80,9 +80,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
-  - $$mdi:mouse-left-click-outline$$
+  - Ctl+A
   - $$mdi:arrow-up-bold$$
-  - $$mdi:mouse-right-click-outline$$
+  - Ctl+F
   - '%'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Ctl+X
@@ -91,7 +91,7 @@ layers:
   - '9'
   - KP PLUS
   - {t: '=', s: +}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - Ctl+X
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
