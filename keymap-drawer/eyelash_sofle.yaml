@@ -1,5 +1,5 @@
 layers:
-  LAYER0:
+  Default_layer:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -55,16 +55,16 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - {t: END, h: layer1}
-  - {t: HOME, h: '4'}
+  - END
+  - {t: '$$mdi:keyboard-space$$', h: NUM_layer}
+  - {t: HOME, h: Mouse_layer}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: layer1, h: toggle}
-  - {t: '$$mdi:keyboard-return$$', h: layer1}
+  - {t: NUM_layer, h: toggle}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_layer}
   - $$mdi:backspace-reverse-outline$$
   - LANGUAGE 1
   - $$mdi:apple-keyboard-control$$
-  layer1:
+  NUM_layer:
   - {t: '`', s: '~'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -121,15 +121,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+C
   - '!'
-  - {t: '?', h: LAYER0, type: held}
-  - {t: '~', h: '4'}
+  - {t: '?', h: Default_layer, type: held}
+  - {t: '~', h: Mouse_layer}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '2', h: toggle}
-  - {t: '0', h: '2', type: held alternate}
+  - {t: Special_char, h: toggle}
+  - {t: '0', h: Special_char, type: held alternate}
   - PRINTSCREEN
   - LANGUAGE 2
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  Special_char:
   - F1
   - F2
   - F3
@@ -186,15 +186,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '3', type: held}
-  - '4'
+  - {t: F_Num, type: held}
+  - Mouse_layer
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
-  - {t: layer1, h: toggle, type: held}
+  - {t: Default_layer, h: toggle}
+  - {t: NUM_layer, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  F_Num:
   - OUT USB
   - OUT BLE
   - BT CLR ALL
@@ -251,15 +251,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle, type: held}
-  - '4'
+  - {t: Default_layer, h: toggle, type: held}
+  - Mouse_layer
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '4':
+  Mouse_layer:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -276,8 +276,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+-, s: Ctl+_}
+  - Ctl++
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -310,7 +310,7 @@ layers:
   - $$mdi:pan-left$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft++
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
